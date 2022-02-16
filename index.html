@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <title>Testimonials - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+    <div class="swiper mySwiper container">
+        <div class="swiper-wrapper content">
+            <div class="swiper-slide card">
+               
+                    <div class="veiw-box">
+                        <div id="testimonials">
+
+
+                          
+                            <div class="user">
+                                <img src="images/user1.jpg" alt="">
+                                <p>Many people feel that there is a limited amount of abundance, wealth, or chance to
+                                    succeed in life. Furthermore, there is a solid beleif that if one person succeeds,
+                                    another must fail.</p>
+                                <h3>- Riley Olie</h3>
+                            </div>
+
+                            <div class="user space">
+                                <img src="images/user2.jpg" alt="">
+                                <p>Many people feel that there is a limited amount of abundance, wealth, or chance to
+                                    succeed in life. Furthermore, there is a solid beleif that if one person succeeds,
+                                    another must fail.</p>
+                                <h3>- Steve McCurry</h3>
+                            </div>
+
+                            <div class="user">
+                                <img src="images/user1.jpg" alt="">
+                                <p>Many people feel that there is a limited amount of abundance, wealth, or chance to
+                                    succeed in life. Furthermore, there is a solid beleif that if one person succeeds,
+                                    another must fail.</p>
+                                <h3>- Merlin Nguyen</h3>
+                            </div>
+
+
+                        </div>
+
+                     
+
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div> -->
+
+                    </div>
+
+                </div>
+              
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- <div class="square1"></div>
+    <div class="square2"></div> -->
+
+    <!-- <script>
+    
+        var testimonials = document.getElementById('testimonials');
+        var control1 = document.getElementById('control1');
+        var control2 = document.getElementById('control2');
+        var control3 = document.getElementById('control3');
+        
+        
+        control1.onclick=function(){
+            testimonials.style.transform = "translateX(870px)";
+            control1.classList.add("active");
+            control2.classList.remove("active");
+            control3.classList.remove("active");
+        }
+        
+        control2.onclick=function(){
+            testimonials.style.transform = "translateX(0px)";
+            control1.classList.remove("active");
+            control2.classList.add("active");
+            control3.classList.remove("active");
+        }
+        
+        control3.onclick=function(){
+            testimonials.style.transform = "translateX(-870px)";
+            control1.classList.remove("active");
+            control2.classList.remove("active");
+            control3.classList.add("active");
+        }
+        
+        
+        
+        
+    
+    </script> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+
+
+</body>
+
+</html>
